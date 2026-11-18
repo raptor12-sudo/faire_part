@@ -41,10 +41,10 @@ a{color:var(--gold-ink)}a:hover{color:var(--green)}
     <p data-a="" style="margin:0;max-width:30ch;font-size:13px;line-height:1.7;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)">Par la grâce d'Allah, nous avons la joie de vous convier à la célébration de notre union</p>
     <div data-a="" aria-hidden="true" style="width:92px;aspect-ratio:150/195;margin:6px 0;background:url(assets/doors.png) 50% 51%/480% auto no-repeat;mix-blend-mode:var(--ornb);filter:var(--ornf);opacity:var(--orn);-webkit-mask-image:radial-gradient(ellipse,#000 55%,transparent 72%);mask-image:radial-gradient(ellipse,#000 55%,transparent 72%)"></div>
     <h1 data-a="" style="margin:0;font-weight:400;display:flex;flex-direction:column;align-items:center">
-      <span style="font-family:'Pinyon Script',cursive;font-size:clamp(50px,14vw,64px);line-height:1.15;color:var(--gold-ink)">{{ groomFirst }}</span>
+      <span style="font-family:'Pinyon Script',cursive;font-size:clamp(38px,12vw,72px);line-height:1.15;overflow-wrap:anywhere;text-wrap:balance;color:var(--gold-ink)">{{ groomFirst }}</span>
       <span style="font-size:14px;letter-spacing:.34em;text-transform:uppercase;color:var(--ink)">{{ groomLast }}</span>
       <span style="margin:10px 0 2px;font-family:'Pinyon Script',cursive;font-size:36px;line-height:1;color:var(--green)">&amp;</span>
-      <span style="font-family:'Pinyon Script',cursive;font-size:clamp(50px,14vw,64px);line-height:1.15;color:var(--gold-ink)">{{ brideFirst }}</span>
+      <span style="font-family:'Pinyon Script',cursive;font-size:clamp(38px,12vw,72px);line-height:1.15;overflow-wrap:anywhere;text-wrap:balance;color:var(--gold-ink)">{{ brideFirst }}</span>
       <span style="font-size:14px;letter-spacing:.34em;text-transform:uppercase;color:var(--ink)">{{ brideLast }}</span>
     </h1>
   </section>
@@ -73,10 +73,10 @@ a{color:var(--gold-ink)}a:hover{color:var(--green)}
     <p data-a="" style="margin:0 0 18px;font-family:'Pinyon Script',cursive;font-size:44px;line-height:1;color:var(--gold-ink)">Plus que</p>
     <sc-if value="{{ cdBefore }}" hint-placeholder-val="{{ true }}">
       <div data-a="" role="timer" aria-live="off" aria-label="Compte à rebours avant le mariage" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px">
-        <div style="background:var(--green);color:var(--on-green);border-radius:12px;padding:14px 0 10px"><div style="font-size:28px;line-height:1;font-variant-numeric:tabular-nums">{{ cd.d }}</div><div style="margin-top:6px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.85">Jours</div></div>
-        <div style="background:var(--green);color:var(--on-green);border-radius:12px;padding:14px 0 10px"><div style="font-size:28px;line-height:1;font-variant-numeric:tabular-nums">{{ cd.h }}</div><div style="margin-top:6px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.85">Heures</div></div>
-        <div style="background:var(--green);color:var(--on-green);border-radius:12px;padding:14px 0 10px"><div style="font-size:28px;line-height:1;font-variant-numeric:tabular-nums">{{ cd.m }}</div><div style="margin-top:6px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.85">Min</div></div>
-        <div style="background:var(--green);color:var(--on-green);border-radius:12px;padding:14px 0 10px"><div style="font-size:28px;line-height:1;font-variant-numeric:tabular-nums">{{ cd.s }}</div><div style="margin-top:6px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.85">Sec</div></div>
+        <div style="background:var(--green);color:var(--on-green);border-radius:12px;padding:14px 0 10px"><div style="font-size:clamp(24px,6vw,40px);line-height:1;font-variant-numeric:tabular-nums">{{ cd.d }}</div><div style="margin-top:6px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.85">Jours</div></div>
+        <div style="background:var(--green);color:var(--on-green);border-radius:12px;padding:14px 0 10px"><div style="font-size:clamp(24px,6vw,40px);line-height:1;font-variant-numeric:tabular-nums">{{ cd.h }}</div><div style="margin-top:6px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.85">Heures</div></div>
+        <div style="background:var(--green);color:var(--on-green);border-radius:12px;padding:14px 0 10px"><div style="font-size:clamp(24px,6vw,40px);line-height:1;font-variant-numeric:tabular-nums">{{ cd.m }}</div><div style="margin-top:6px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.85">Min</div></div>
+        <div style="background:var(--green);color:var(--on-green);border-radius:12px;padding:14px 0 10px"><div style="font-size:clamp(24px,6vw,40px);line-height:1;font-variant-numeric:tabular-nums">{{ cd.s }}</div><div style="margin-top:6px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.85">Sec</div></div>
       </div>
       <p style="margin:14px 0 0;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)">Pour célébrer ensemble ce jour béni</p>
     </sc-if>
@@ -90,14 +90,14 @@ a{color:var(--gold-ink)}a:hover{color:var(--green)}
   <section id="versets" data-screen-label="Versets" style="margin-top:64px;width:100%;display:grid;gap:40px">
     <p data-a="" style="margin:0;font-family:'Pinyon Script',cursive;font-size:44px;line-height:1;color:var(--gold-ink)">Nos versets</p>
     <figure data-a="" style="margin:0">
-      <p lang="ar" dir="rtl" style="margin:0;font-family:'Amiri',serif;font-size:23px;line-height:2.05;text-wrap:pretty">وَمِنْ ءَايَٰتِهِۦٓ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَٰجًا لِّتَسْكُنُوٓا۟ إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِى ذَٰلِكَ لَءَايَٰتٍ لِّقَوْمٍ يَتَفَكَّرُونَ</p>
-      <blockquote style="margin:14px 0 0;font-size:14px;line-height:1.8;color:var(--muted);text-wrap:pretty">« Et parmi Ses signes, Il a créé de vous, pour vous, des épouses afin que vous viviez en tranquillité avec elles et Il a mis entre vous de l'affection et de la bonté. Il y a en cela des preuves pour des gens qui réfléchissent. »</blockquote>
+      <p lang="ar" dir="rtl" style="margin:0;font-family:'Amiri',serif;font-size:clamp(20px,3.4vw,28px);line-height:2.05;text-wrap:pretty">وَمِنْ ءَايَٰتِهِۦٓ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَٰجًا لِّتَسْكُنُوٓا۟ إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِى ذَٰلِكَ لَءَايَٰتٍ لِّقَوْمٍ يَتَفَكَّرُونَ</p>
+      <blockquote style="margin:14px 0 0;font-size:clamp(14px,1.8vw,16px);line-height:1.8;color:var(--muted);text-wrap:pretty">« Et parmi Ses signes, Il a créé de vous, pour vous, des épouses afin que vous viviez en tranquillité avec elles et Il a mis entre vous de l'affection et de la bonté. Il y a en cela des preuves pour des gens qui réfléchissent. »</blockquote>
       <figcaption style="margin-top:12px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-ink)">Sourate Ar-Rûm · 30:21</figcaption>
     </figure>
     <div aria-hidden="true" style="display:flex;align-items:center;justify-content:center;gap:12px"><span style="width:48px;height:1px;background:var(--line)"></span><span style="width:6px;height:6px;transform:rotate(45deg);background:var(--gold)"></span><span style="width:48px;height:1px;background:var(--line)"></span></div>
     <figure data-a="" style="margin:0">
-      <p lang="ar" dir="rtl" style="margin:0;font-family:'Amiri',serif;font-size:32px;line-height:1.8">وَخَلَقْنَٰكُمْ أَزْوَٰجًا</p>
-      <blockquote style="margin:10px 0 0;font-size:14px;line-height:1.8;color:var(--muted)">« Et Nous vous avons créés en couples. »</blockquote>
+      <p lang="ar" dir="rtl" style="margin:0;font-family:'Amiri',serif;font-size:clamp(28px,5vw,40px);line-height:1.8">وَخَلَقْنَٰكُمْ أَزْوَٰجًا</p>
+      <blockquote style="margin:10px 0 0;font-size:clamp(14px,1.8vw,16px);line-height:1.8;color:var(--muted)">« Et Nous vous avons créés en couples. »</blockquote>
       <figcaption style="margin-top:12px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-ink)">Sourate An-Naba · 78:8</figcaption>
     </figure>
     <sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><p style="margin:0;font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--gold-ink)">[Textes religieux à faire vérifier avant publication]</p></sc-if>
@@ -106,14 +106,14 @@ a{color:var(--gold-ink)}a:hover{color:var(--green)}
   <!-- Lieu -->
   <section id="lieu" data-screen-label="Lieu" style="margin-top:72px;width:100%;display:flex;flex-direction:column;align-items:center;gap:14px">
     <p data-a="" style="margin:0;font-family:'Pinyon Script',cursive;font-size:48px;line-height:1;color:var(--gold-ink)">Le lieu</p>
-    <sc-if value="{{ hasHall }}"><p style="margin:0;font-size:13px;letter-spacing:.2em;text-transform:uppercase">{{ hall }}</p></sc-if>
-    <sc-if value="{{ noHall }}" hint-placeholder-val="{{ true }}"><span style="font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--gold-ink);border:1px dashed var(--gold-ink);border-radius:6px;padding:3px 8px">[Nom de la salle à renseigner]</span></sc-if>
+    
+    
     <p data-a="" style="margin:0;font-size:17px;letter-spacing:.16em;text-transform:uppercase;line-height:1.6">{{ venue }}<br><span style="font-size:13px;color:var(--muted)">{{ cityLine }}</span></p>
-    <div data-a="" style="margin-top:8px;width:100%;aspect-ratio:4/3;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#E8E0CF;position:relative">
+    <div data-a="" style="margin-top:8px;width:100%;aspect-ratio:4/3;max-height:380px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#E8E0CF;position:relative">
       <iframe title="Carte de localisation du lieu du mariage" src="{{ mapSrc }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="position:absolute;inset:0;width:100%;height:100%;border:0;filter:var(--mapf)"></iframe>
     </div>
     <p style="margin:18px 0 4px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)">Touchez un bouton ci-dessous</p>
-    <div data-a="" style="display:flex;justify-content:center;gap:28px;flex-wrap:wrap">
+    <div data-a="" style="display:flex;justify-content:center;gap:clamp(20px,6vw,40px);flex-wrap:wrap">
       <a href="{{ gmaps }}" target="_blank" rel="noopener" style="display:flex;flex-direction:column;align-items:center;gap:8px;text-decoration:none;color:var(--ink);font-size:11px;letter-spacing:.12em;text-transform:uppercase;line-height:1.3" style-hover="color:var(--green)">
         <span style="width:60px;height:60px;border-radius:50%;background:var(--green);color:var(--on-green);display:grid;place-items:center;box-shadow:0 8px 18px -10px rgba(48,70,56,.8)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
         Google<br>Maps
@@ -122,14 +122,9 @@ a{color:var(--gold-ink)}a:hover{color:var(--green)}
         <span style="width:60px;height:60px;border-radius:50%;background:var(--green);color:var(--on-green);display:grid;place-items:center;box-shadow:0 8px 18px -10px rgba(48,70,56,.8)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg></span>
         Itinéraire<br>Waze
       </a>
-      <sc-if value="{{ hasWa }}">
-        <a href="{{ waHref }}" target="_blank" rel="noopener" style="display:flex;flex-direction:column;align-items:center;gap:8px;text-decoration:none;color:var(--ink);font-size:11px;letter-spacing:.12em;text-transform:uppercase;line-height:1.3" style-hover="color:var(--green)">
-          <span style="width:60px;height:60px;border-radius:50%;background:var(--green);color:var(--on-green);display:grid;place-items:center;box-shadow:0 8px 18px -10px rgba(48,70,56,.8)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg></span>
-          Une<br>question ?
-        </a>
-      </sc-if>
+      
     </div>
-    <sc-if value="{{ noWa }}" hint-placeholder-val="{{ true }}"><span style="margin-top:12px;font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--gold-ink);border:1px dashed var(--gold-ink);border-radius:6px;padding:6px 10px">[Numéro WhatsApp à renseigner]</span></sc-if>
+    
     <p style="margin:12px 0 0;font-size:11px;letter-spacing:.12em;color:var(--muted)">GPS {{ coordsLabel }}</p>
   </section>
 
@@ -137,7 +132,7 @@ a{color:var(--gold-ink)}a:hover{color:var(--green)}
   <footer data-screen-label="Bénédiction" style="margin-top:80px;width:100%;display:flex;flex-direction:column;align-items:center;gap:14px">
     <div aria-hidden="true" style="width:92px;aspect-ratio:150/195;background:url(assets/doors.png) 50% 51%/480% auto no-repeat;mix-blend-mode:var(--ornb);filter:var(--ornf);opacity:var(--orn);-webkit-mask-image:radial-gradient(ellipse,#000 55%,transparent 72%);mask-image:radial-gradient(ellipse,#000 55%,transparent 72%)"></div>
     <p data-a="" lang="ar" dir="rtl" style="margin:0;font-family:'Amiri',serif;font-size:24px;line-height:1.9;color:var(--gold-ink)">بَارَكَ اللَّهُ لَكَ، وَبَارَكَ عَلَيْكَ، وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p>
-    <p data-a="" style="margin:0;max-width:32ch;font-size:14px;line-height:1.8;color:var(--muted)">« Qu'Allah te bénisse, qu'Il répande sur toi Sa bénédiction et qu'Il vous unisse dans le bien. »</p>
+    <p data-a="" style="margin:0;max-width:32ch;font-size:clamp(14px,1.8vw,16px);line-height:1.8;color:var(--muted)">« Qu'Allah te bénisse, qu'Il répande sur toi Sa bénédiction et qu'Il vous unisse dans le bien. »</p>
     <p data-a="" style="margin:18px 0 0;font-family:'Pinyon Script',cursive;font-size:34px;line-height:1.3;color:var(--green)">Nous vous attendons avec joie</p>
     <button onClick="{{ replay }}" style="margin-top:24px;min-height:44px;padding:0 22px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);font:13px 'Marcellus',serif;letter-spacing:.12em;text-transform:uppercase;cursor:pointer" style-hover="border-color:var(--gold-ink)">Revoir l'ouverture</button>
   </footer>
@@ -164,7 +159,7 @@ a{color:var(--gold-ink)}a:hover{color:var(--green)}
       <div style="position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;filter:drop-shadow(0 6px 8px rgba(0,0,0,.35))">
         <div style="position:absolute;inset:0 0 -2px;clip-path:polygon(0 0,100% 0,50% 100%);background:#B8A877"></div>
         <div style="position:absolute;inset:0 0 0;clip-path:polygon(0 0,100% 0,50% calc(100% - 2px));background:linear-gradient(180deg,#34503D,#2E4737);">
-          <span style="position:absolute;left:50%;top:38%;transform:translate(-50%,-50%);white-space:nowrap;font-family:'Pinyon Script',cursive;font-size:clamp(48px,9vh,84px);line-height:1;color:#B8A877;text-shadow:0 1px 0 rgba(255,255,255,.12),0 -1px 0 rgba(0,0,0,.35)">{{ gI }}<span style="font-size:.5em">&amp;</span>{{ bIor }}</span>
+          <span style="position:absolute;left:50%;top:38%;z-index:1;transform:translate(-50%,-50%);white-space:nowrap;font-family:'Pinyon Script',cursive;font-size:clamp(40px,min(9vh,16vw),84px);line-height:1;color:#B8A877;text-shadow:0 1px 0 rgba(255,255,255,.12),0 -1px 0 rgba(0,0,0,.35)">{{ gI }}<span style="font-size:.5em">&amp;</span>{{ bIor }}</span>
         </div>
       </div>
       <div style="position:absolute;inset:0;transform:rotateX(180deg);backface-visibility:hidden;-webkit-backface-visibility:hidden"><div style="position:absolute;inset:0;clip-path:polygon(0 0,100% 0,50% 100%);background:#22382A"></div></div>
@@ -175,10 +170,10 @@ a{color:var(--gold-ink)}a:hover{color:var(--green)}
       <span ref="{{ sealLRef }}" aria-hidden="true" style="position:absolute;inset:0;border-radius:48% 52% 50% 50% / 52% 48% 52% 48%;clip-path:inset(-10% 50% -10% -10%);background:radial-gradient(circle at 35% 30%,#F3DDA2,#CDA85C 45%,#9C7A35 88%);box-shadow:0 10px 22px rgba(0,0,0,.45),inset 0 -4px 8px rgba(90,60,15,.45),inset 0 3px 4px rgba(255,240,200,.6);display:grid;place-items:center"><span style="width:74%;height:74%;border-radius:50%;border:1.5px solid rgba(110,80,25,.45);box-shadow:inset 0 2px 4px rgba(90,60,15,.4);display:flex;align-items:center;justify-content:center;white-space:nowrap;font-family:'Pinyon Script',cursive;font-size:clamp(22px,4vh,36px);color:#6E5220;text-shadow:0 1px 0 rgba(255,235,190,.7)">{{ gI }}<span style="font-size:.6em;margin:0 1px">&amp;</span>{{ bIor }}</span></span>
       <span ref="{{ sealRRef }}" aria-hidden="true" style="position:absolute;inset:0;border-radius:48% 52% 50% 50% / 52% 48% 52% 48%;clip-path:inset(-10% -10% -10% 50%);background:radial-gradient(circle at 35% 30%,#F3DDA2,#CDA85C 45%,#9C7A35 88%);box-shadow:0 10px 22px rgba(0,0,0,.45),inset 0 -4px 8px rgba(90,60,15,.45),inset 0 3px 4px rgba(255,240,200,.6);display:grid;place-items:center"><span style="width:74%;height:74%;border-radius:50%;border:1.5px solid rgba(110,80,25,.45);box-shadow:inset 0 2px 4px rgba(90,60,15,.4);display:flex;align-items:center;justify-content:center;white-space:nowrap;font-family:'Pinyon Script',cursive;font-size:clamp(22px,4vh,36px);color:#6E5220;text-shadow:0 1px 0 rgba(255,235,190,.7)">{{ gI }}<span style="font-size:.6em;margin:0 1px">&amp;</span>{{ bIor }}</span></span>
     </button>
-    <div ref="{{ hintRef }}" style="position:absolute;left:0;right:0;top:66%;z-index:5;display:flex;flex-direction:column;align-items:center;gap:10px;padding:0 20px;text-align:center;pointer-events:none">
+    <div ref="{{ hintRef }}" style="position:absolute;left:0;right:0;top:calc(54% + clamp(84px,min(24vw,16vh),140px) / 2 + 30px);z-index:5;display:flex;flex-direction:column;align-items:center;gap:clamp(6px,1.4vh,10px);padding:0 20px;text-align:center;pointer-events:none">
       <p style="margin:0;font-family:'Marcellus',serif;font-size:clamp(11px,1.7vh,14px);letter-spacing:.22em;text-transform:uppercase;line-height:1.6;color:#D9C38A">Touchez le médaillon<br>pour découvrir notre invitation</p>
       <div aria-hidden="true" style="display:flex;align-items:center;gap:10px"><span style="width:56px;height:1px;background:rgba(217,195,138,.6)"></span><span style="width:5px;height:5px;transform:rotate(45deg);background:#D9C38A"></span><span style="width:56px;height:1px;background:rgba(217,195,138,.6)"></span></div>
-      <p style="margin:clamp(10px,3vh,28px) 0 0;font-family:'Pinyon Script',cursive;font-size:clamp(26px,4.2vh,36px);line-height:1.1;color:#F2EBDD">{{ groomFirst }} <span style="color:#D9C38A">&amp;</span> {{ brideFirst }}</p>
+      <p style="margin:clamp(4px,3vh,28px) 0 0;font-family:'Pinyon Script',cursive;font-size:clamp(22px,min(4.2vh,7vw),36px);line-height:1.1;color:#F2EBDD">{{ groomFirst }} <span style="color:#D9C38A">&amp;</span> {{ brideFirst }}</p>
     </div>
   </div>
   <div ref="{{ bloomRef }}" aria-hidden="true" style="position:absolute;inset:0;z-index:8;opacity:0;pointer-events:none;background:#F6F1E7"></div>
